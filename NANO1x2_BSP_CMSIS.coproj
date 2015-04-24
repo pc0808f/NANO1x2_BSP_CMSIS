@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 2.0.2" name="NANO1x2_BSP_CMSIS">
+  <Target name="NANO1x2_BSP_CMSIS" isCurrent="1">
+    <Device manufacturerId="8" manufacturerName="Nuvoton" chipId="209" chipName="NANO112VC2AN" boardId="" boardName="" coreId="1" coreName="Cortex M0"/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Option name="DEBUG" value="2"/>
+        <Option name="WARNING" value="1"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="NANO112VC2AN"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="0"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00008000" startValue="0x00000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00002000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="../../../../../../appdata/roaming/coocox/coide/configuration/programdata/nano1x2_bsp_cmsis/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="NANO1x2_BSP_CMSIS"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="Nu-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="C:\Users\Sam\AppData\Roaming\CooCox\CoIDE\config\flash\CooCox-Flash\CoIDE_NANO112_32K\NANO1xx_32.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="97" name="cmsis_core" path="" type="BasicComponet"/>
+    <Component id="99" name="C_library" path="" type="BasicComponet"/>
+  </Components>
+  <LocalComponents/>
+  <Files>
+    <File name="source/startup_Nano1X2Series.c" path="source/startup_Nano1X2Series.c" type="1"/>
+    <File name="source/fmc.c" path="source/fmc.c" type="1"/>
+    <File name="source/spi.c" path="source/spi.c" type="1"/>
+    <File name="printf.c" path="test/printf.c" type="1"/>
+    <File name="components/cmsis_core/core_cmInstr.h" path="../cmsis_core/source/core_cmInstr.h" type="1"/>
+    <File name="source/acmp.c" path="source/acmp.c" type="1"/>
+    <File name="components/cmsis_core/core_cmFunc.h" path="../cmsis_core/source/core_cmFunc.h" type="1"/>
+    <File name="components/cmsis_core" path="" type="2"/>
+    <File name="source/clk.h" path="source/clk.h" type="1"/>
+    <File name="source/rtc.c" path="source/rtc.c" type="1"/>
+    <File name="source/lcd.h" path="source/lcd.h" type="1"/>
+    <File name="source/i2c.c" path="source/i2c.c" type="1"/>
+    <File name="components/cmsis_core/arm_common_tables.h" path="../cmsis_core/source/arm_common_tables.h" type="1"/>
+    <File name="components/cmsis_core/arm_const_structs.h" path="../cmsis_core/source/arm_const_structs.h" type="1"/>
+    <File name="components/cmsis_core/core_sc300.h" path="../cmsis_core/source/core_sc300.h" type="1"/>
+    <File name="source/pwm.h" path="source/pwm.h" type="1"/>
+    <File name="source/system_Nano1X2Series.c" path="source/system_Nano1X2Series.c" type="1"/>
+    <File name="source/acmp.h" path="source/acmp.h" type="1"/>
+    <File name="source/uart.h" path="source/uart.h" type="1"/>
+    <File name="source/scuart.h" path="source/scuart.h" type="1"/>
+    <File name="source/wwdt.c" path="source/wwdt.c" type="1"/>
+    <File name="components/cmsis_core/core_cm4_simd.h" path="../cmsis_core/source/core_cm4_simd.h" type="1"/>
+    <File name="source/wdt.h" path="source/wdt.h" type="1"/>
+    <File name="source/pdma.h" path="source/pdma.h" type="1"/>
+    <File name="source/spi.h" path="source/spi.h" type="1"/>
+    <File name="source/sc.h" path="source/sc.h" type="1"/>
+    <File name="source/adc.h" path="source/adc.h" type="1"/>
+    <File name="components/cmsis_core/core_cm0plus.h" path="../cmsis_core/source/core_cm0plus.h" type="1"/>
+    <File name="source/fmc.h" path="source/fmc.h" type="1"/>
+    <File name="source/gpio.h" path="source/gpio.h" type="1"/>
+    <File name="source/lcd.c" path="source/lcd.c" type="1"/>
+    <File name="components/cmsis_core/core_sc000.h" path="../cmsis_core/source/core_sc000.h" type="1"/>
+    <File name="source/adc.c" path="source/adc.c" type="1"/>
+    <File name="components/C_library" path="" type="2"/>
+    <File name="components/cmsis_core/core_cm0.h" path="../cmsis_core/source/core_cm0.h" type="1"/>
+    <File name="source/wdt.c" path="source/wdt.c" type="1"/>
+    <File name="source/timer.h" path="source/timer.h" type="1"/>
+    <File name="source/Nano1x2Series.h" path="source/Nano1x2Series.h" type="1"/>
+    <File name="source/sc.c" path="source/sc.c" type="1"/>
+    <File name="components/C_library/syscalls.c" path="../C_library/source/syscalls.c" type="1"/>
+    <File name="source/pwm.c" path="source/pwm.c" type="1"/>
+    <File name="source/clk.c" path="source/clk.c" type="1"/>
+    <File name="source/gpio.c" path="source/gpio.c" type="1"/>
+    <File name="source/crc.h" path="source/crc.h" type="1"/>
+    <File name="source" path="" type="2"/>
+    <File name="source/wwdt.h" path="source/wwdt.h" type="1"/>
+    <File name="source/i2c.h" path="source/i2c.h" type="1"/>
+    <File name="components/cmsis_core/core_cm3.h" path="../cmsis_core/source/core_cm3.h" type="1"/>
+    <File name="source/sys.h" path="source/sys.h" type="1"/>
+    <File name="source/pdma.c" path="source/pdma.c" type="1"/>
+    <File name="source/timer.c" path="source/timer.c" type="1"/>
+    <File name="source/crc.c" path="source/crc.c" type="1"/>
+    <File name="components/cmsis_core/core_cm4.h" path="../cmsis_core/source/core_cm4.h" type="1"/>
+    <File name="components" path="" type="2"/>
+    <File name="source/sys.c" path="source/sys.c" type="1"/>
+    <File name="source/scuart.c" path="source/scuart.c" type="1"/>
+    <File name="source/uart.c" path="source/uart.c" type="1"/>
+    <File name="source/system_Nano1X2Series.h" path="source/system_Nano1X2Series.h" type="1"/>
+    <File name="main.c" path="test/main.c" type="1"/>
+    <File name="source/rtc.h" path="source/rtc.h" type="1"/>
+    <File name="components/cmsis_core/arm_math.h" path="../cmsis_core/source/arm_math.h" type="1"/>
+  </Files>
+  <Bookmarks/>
+</Project>

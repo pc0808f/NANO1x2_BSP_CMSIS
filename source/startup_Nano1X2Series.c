@@ -118,18 +118,22 @@ void (* const g_pfnVectors[])(void) =
   UART0_IRQHandler,          /*!<  12: UART 0 interrupt                                                   */
   UART1_IRQHandler,          /*!<  13: UART 1 interrupt                                                   */
   SPI0_IRQHandler,           /*!<  14: SPI 0 interrupt                                                    */
-  SPI1_IRQHandler,           /*!<  15: SPI 1 interrupt                                                    */                                                   
+  SPI1_IRQHandler,           /*!<  15: SPI 1 interrupt                                                    */    
+  Default_Handler,           /*!<  16: Reserved                                                           */  
   HIRC_IRQHandler,           /*!<  17: IRC TRIM interrupt                                                 */
   I2C0_IRQHandler,           /*!<  18: I2C 0 interrupt                                                    */
   I2C1_IRQHandler,           /*!<  19: I2C 1 interrupt                                                    */
   Default_Handler,           /*!<  20: Reserved                                                           */
   SC0_IRQHandler,            /*!<  21: Smart Card 0 interrupt                                             */
   SC1_IRQHandler,            /*!<  22: Smart Card 1 interrupt                                             */
-  ACMP_IRQHandler,
+  Default_Handler,           /*!<  23: Reserved                                                           */
+  Default_Handler,           /*!<  24: Reserved                                                           */
   LCD_IRQHandler,            /*!<  25: LCD interrupt                                                      */
   PDMA_IRQHandler,           /*!<  26: DMA interrupt                                                      */
+  Default_Handler,           /*!<  27: Reserved                                                           */
   PDWU_IRQHandler,           /*!<  28: Clock control interrupt for chip wake-up from power-down state     */
   ADC_IRQHandler,            /*!<  29: ADC interrupt                                                      */
+  ACMP_IRQHandler,
   RTC_IRQHandler,            /*!<  31: Real time clock interrupt                                          */
 };
 
